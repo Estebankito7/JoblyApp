@@ -19,10 +19,11 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 app.use(myconnection(mysql2, {
-    host: "aws.connect.psdb.cloud",
-    user: "3l0rooxg49o9pe28aek8",
-    password: "pscale_pw_6AtwDlM9hXWg5OWmD8IhDJIirURNz1QwWHaNoNItbeR",
-    database: "jobly",
+    host: "containers-us-west-97.railway.app",
+    user: "root",
+    password: "usb4v2YnfcFP01i0Nz9Q",
+    database: "railway",
+    port: 6582,
     ssl: {
         rejectUnauthorized: false
     }
