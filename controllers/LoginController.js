@@ -13,7 +13,6 @@ function Auth(req, res){
   req.getConnection((err, conn) => {
     conn.query("SELECT * FROM usuarios WHERE Email = ?", [data.Email], (err, userdata)=>{
       if(userdata.length > 0){
-        console.log(userdata);
         userdata.forEach(element => {
           bcrypt.compare(data.Clave, element.Clave, (err, isMatch) => {
             if(!isMatch){
