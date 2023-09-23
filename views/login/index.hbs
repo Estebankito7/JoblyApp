@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobly</title>
+    <link rel="stylesheet" href="https://syxlordz.github.io/Jobly/style2.css">
+</head>
+<body>
+    <div class="FirstDiv2">
+         <h1 class="Jobly">Jobly</h1>
+         <h2 class="Text4">Crea una cuenta</h2>
+         <form class="Form" action="" method="post" id="Formulario">
+            <input type="text" name="Email" style="outline: none;" class="Email" placeholder=" Correo electrónico" required>
+            <input type="text" name="Clave" class="Contraseña" placeholder=" Contraseña">
+            <input type="submit" class="Registarse">
+            <a href="/register" class="Login">Crea una cuenta</a>
+            {{#if error}}
+             <p style="color: red;">*{{error}}</p>
+            {{/if}}
+         </form>
+    </div>
+</body>
+</html>
