@@ -20,8 +20,8 @@ app.use(bodyParser.json());
 
 app.use(myconnection(mysql2, {
     host: "aws.connect.psdb.cloud",
-    user: "31n6gpkoayqyo2afn9ne",
-    password: "pscale_pw_aUkI5VQ1auMECOKa9whNCemqgdc8rO7LvrqWkf18cdA",
+    user: "3l0rooxg49o9pe28aek8",
+    password: "pscale_pw_6AtwDlM9hXWg5OWmD8IhDJIirURNz1QwWHaNoNItbeR",
     database: "jobly",
     ssl: {
         rejectUnauthorized: false
