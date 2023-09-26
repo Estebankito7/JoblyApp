@@ -65,7 +65,7 @@ export class JobSearch {
         }
       };
 
-      const query = `${search} jobs in ${location}, ${this.countryCode}`;
+      const query = `trabajos de ${search} en ${location}, ${this.countryCode}`;
       const num_pages = '2';
       const url = `https://jsearch.p.rapidapi.com/search?query=${query}&num_pages=${num_pages}`;
       try {
