@@ -21,9 +21,9 @@ app.use(bodyParser.json());
 app.use(myconnection(mysql2, {
     host: "containers-us-west-111.railway.app",
     user: "root",
-    password: "3ouPaLNA73V9WWXlCLlR",
+    password: "jRIP7Qwnq6TNRlVSsdWn",
     database: "railway",
-    port: 7543,
+    port: 7437,
     ssl: {
         rejectUnauthorized: false
     }
