@@ -2,31 +2,35 @@ const express = require("express");
 const { engine } = require("express-handlebars");
 const myconnection = require("express-myconnection");
 const mysql2 = require("mysql2");
-const session = require("express-session");
 const bodyParser = require("body-parser");
-const loginRoutes = require("./routes/Login.js");
+const session = require('cookie-session');
+
+const loginRoutes = require("./routes/login.js");
 
 const app = express();
+
 app.set("port", 4000);
+
 app.set("views", __dirname + "/views");
+
 app.engine(".hbs", engine({
     extname: ".hbs",
 }));
+
 app.set("view engine", "hbs");
+
 app.use(bodyParser.urlencoded({
     extended: true
 }));
+
 app.use(bodyParser.json());
 
 app.use(myconnection(mysql2, {
-    host: "containers-us-west-196.railway.app",
+    host: "localhost",
     user: "root",
-    password: "QkeiR0yR0aIDSdUmRioH",
-    database: "railway",
-    port: 6542,
-    ssl: {
-        rejectUnauthorized: false
-    }
+    password: "Cali2007$",
+    database: "jobly",
+    port: 3306,
 }));
 
 app.use(session({
