@@ -5,7 +5,7 @@ const mysql2 = require("mysql2");
 const bodyParser = require("body-parser");
 const session = require('cookie-session');
 
-const loginRoutes = require("./routes/login.js");
+const loginRoutes = require("./routes/Login.js");
 
 const app = express();
 
