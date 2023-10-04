@@ -72,7 +72,8 @@ function storeUser(req, res){
 
 function logout(req, res){
   if (req.session.loggedin == true){
-    req.session.destroy();
+    delete req.session.loggedin;
+    delete req.session.name;
   }
   res.redirect("/login")
 }
