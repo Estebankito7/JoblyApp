@@ -19,11 +19,11 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 app.use(myconnection(mysql2, {
-    host: "containers-us-west-108.railway.app",
+    host: "containers-us-west-196.railway.app",
     user: "root",
-    password: "gLqQQhOOcxGERsEILPif",
+    password: "QkeiR0yR0aIDSdUmRioH",
     database: "railway",
-    port: 7829,
+    port: 6542,
     ssl: {
         rejectUnauthorized: false
     }
