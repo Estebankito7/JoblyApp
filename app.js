@@ -26,11 +26,11 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 app.use(myconnection(mysql2, {
-    host: "containers-us-west-126.railway.app",
+    host: "containers-us-west-33.railway.app",
     user: "root",
-    password: "wf3aDy5tIaHTn8vyFl82",
+    password: "4kcBptMLhgwEzhPnHGFY",
     database: "railway",
-    port: 6544,
+    port: 6398,
 }));
 
 app.use(session({
