@@ -7,17 +7,30 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://syxlordz.github.io/Jobly/src/scss/app.css">
+  <link rel="icon" href="https://syxlordz.github.io/Jobly/26%20sept%202023%20a%20la(s)%2017_15.png">
   <title>Job Search</title>
 </head>
 
 <body>
-  <nav class="navJobly" style="box-shadow: 0px 0.03703703731298447px 3.1481480598449707px 0px rgba(0, 0, 0, 0.03), 0px 0.16296295821666718px 6.518518447875977px 0px rgba(0, 0, 0, 0.05), 0px 0.4000000059604645px 13px 0px rgba(0, 0, 0, 0.06), 0px 0.770370364189148px 25.481481552124023px 0px rgba(0, 0, 0, 0.08), 0px 1.296296238899231px 46.85185241699219px 0px rgba(0, 0, 0, 0.10), 0px 2px 80px 0px rgba(0, 0, 0, 0.13);">
+  {{#if loggeding}}
+  <nav class="navJobly"
+    style="box-shadow: 0px 0.03703703731298447px 3.1481480598449707px 0px rgba(0, 0, 0, 0.03), 0px 0.16296295821666718px 6.518518447875977px 0px rgba(0, 0, 0, 0.05), 0px 0.4000000059604645px 13px 0px rgba(0, 0, 0, 0.06), 0px 0.770370364189148px 25.481481552124023px 0px rgba(0, 0, 0, 0.08), 0px 1.296296238899231px 46.85185241699219px 0px rgba(0, 0, 0, 0.10), 0px 2px 80px 0px rgba(0, 0, 0, 0.13);">
     <h2 class="BienvenidaUsu">Jobly</h2>
     <div class="Buttons">
-        <h3 class="Username">{{name}}</h3>
-        <a href="/logout" class="Close">Cerrar Sesión</a>
+      <h3 class="Username">{{name}}</h3>
+      <a href="/logout" class="Close">Cerrar Sesión</a>
     </div>
   </nav>
+  {{else}}
+  <nav class="navJobly"
+    style="box-shadow: 0px 0.03703703731298447px 3.1481480598449707px 0px rgba(0, 0, 0, 0.03), 0px 0.16296295821666718px 6.518518447875977px 0px rgba(0, 0, 0, 0.05), 0px 0.4000000059604645px 13px 0px rgba(0, 0, 0, 0.06), 0px 0.770370364189148px 25.481481552124023px 0px rgba(0, 0, 0, 0.08), 0px 1.296296238899231px 46.85185241699219px 0px rgba(0, 0, 0, 0.10), 0px 2px 80px 0px rgba(0, 0, 0, 0.13);">
+    <h2 class="BienvenidaUsu">Jobly</h2>
+    <div class="Buttons">
+      <a href="/login" class="Login">Inicia tu sesión</a>
+      <a href="/register" class="Register">Crea una cuenta</a>
+    </div>
+  </nav>
+  {{/if}}
   <header>
     <div class="container">
       <h1>Jobly</h1>
