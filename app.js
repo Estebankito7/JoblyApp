@@ -49,7 +49,7 @@ app.get("/", (req, res) => {
     if(req.session.loggedin == true){
         res.render("home", {name: req.session.name});
     } else {
-        res.redirect("/login");
+        res.render("home", {name: req.session.name, loggedin: req.session.loggedin});
     }
 });
 
