@@ -47,7 +47,7 @@ app.use("/", loginRoutes);
 
 app.get("/", (req, res) => {
     if(req.session.loggedin == true){
-        res.render("home", {name: req.session.name});
+        res.render("home", {name: req.session.name, loggeding: req.session.loggedin});
     } else {
         res.render("home", {name: req.session.name, loggedin: req.session.loggedin});
     }
